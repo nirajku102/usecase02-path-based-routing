@@ -15,10 +15,10 @@ variable "subnet_cidrs" {
 
 variable "ami_id" {
   description = "AMI ID for EC2 instances"
-  default     = "ami-05f417c208be02d4d" # Amazon Linux 2 AMI
+  default     = "ami-084568db4383264d4" # Amazon Linux 2 AMI
 }
 
 variable "instance_type" {
   description = "EC2 instance type"
-  default     = "t4g.micro"
+  default     = "t2.micro"
 }
