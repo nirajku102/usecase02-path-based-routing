@@ -12,3 +12,13 @@ variable "subnet_cidrs" {
   description = "CIDR blocks for subnets"
   default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 }
+
+variable "ami_id" {
+  description = "AMI ID for EC2 instances"
+  default     = "ami-05f417c208be02d4d" # Amazon Linux 2 AMI
+}
+
+variable "instance_type" {
+  description = "EC2 instance type"
+  default     = "t4g.micro"
+}
