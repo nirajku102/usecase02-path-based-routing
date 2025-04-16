@@ -30,7 +30,7 @@ resource "aws_subnet" "subnets" {
 #create internet geteway
 
 resource "aws_internet_gateway" "igw" {
-    vpc_id = aws_vpc.id
+    vpc_id = aws_vpc.main.id
     tags {
         name = "alb-igw"
     }
